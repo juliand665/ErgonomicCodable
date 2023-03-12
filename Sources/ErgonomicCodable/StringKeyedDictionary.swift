@@ -36,3 +36,6 @@ extension StringKeyedDictionary: Codable where Value: Codable {
 		try container.encode(rawKeyedDictionary)
 	}
 }
+
+extension StringKeyedDictionary: Equatable where Value: Equatable {}
+extension StringKeyedDictionary: Hashable where Value: Hashable {}
